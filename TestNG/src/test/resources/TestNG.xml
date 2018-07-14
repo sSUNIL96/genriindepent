@@ -1,0 +1,9 @@
+
+<suite name="softwaretestingNinad">
+ <test name="testingTestNG">
+ <classes>
+ <class name="com.ninad.project.TestMyMethods" />
+<!--  <class name="com.ninad.project.Billing.verifyPassword" /> -->
+ </classes>
+ </test>
+</suite>

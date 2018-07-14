@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2895" started-at="2018-07-14T14:10:50Z" finished-at="2018-07-14T14:10:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2895" started-at="2018-07-14T14:10:50Z" finished-at="2018-07-14T14:10:53Z">
+      <class name="com.ninad.project.testng.TestNG.TestMyMethods">
+        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="1724" started-at="2018-07-14T19:40:51Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ninad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ninad123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticateMethod -->
+        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="5" started-at="2018-07-14T19:40:53Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticateMethod -->
+        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="175" started-at="2018-07-14T19:40:53Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ninad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kccjkz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticateMethod -->
+        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="23" started-at="2018-07-14T19:40:53Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xhbdshc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ninad123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[username dose not exist]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticateMethod -->
+        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="1" started-at="2018-07-14T19:40:53Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fields can not be null]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticateMethod -->
+      </class> <!-- com.ninad.project.testng.TestNG.TestMyMethods -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
