@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="3" ignored="0" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2895" started-at="2018-07-14T14:10:50Z" finished-at="2018-07-14T14:10:53Z">
+  <suite name="Default suite" duration-ms="10346" started-at="2018-07-18T07:03:08Z" finished-at="2018-07-18T07:03:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2895" started-at="2018-07-14T14:10:50Z" finished-at="2018-07-14T14:10:53Z">
+    <test name="Default test" duration-ms="10346" started-at="2018-07-18T07:03:08Z" finished-at="2018-07-18T07:03:18Z">
       <class name="com.ninad.project.testng.TestNG.TestMyMethods">
-        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="1724" started-at="2018-07-14T19:40:51Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+        <test-method status="FAIL" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="7993" started-at="2018-07-18T12:33:10Z" data-provider="ninad" finished-at="2018-07-18T12:33:18Z">
           <params>
             <param index="0">
               <value>
@@ -25,10 +25,51 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [success] but found [username dose not exist]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [success] but found [username dose not exist]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.ninad.project.testng.TestNG.TestMyMethods.testAuthenticateMethod(TestMyMethods.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthenticateMethod -->
-        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="5" started-at="2018-07-14T19:40:53Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+        <test-method status="FAIL" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="50" started-at="2018-07-18T12:33:18Z" data-provider="ninad" finished-at="2018-07-18T12:33:18Z">
           <params>
             <param index="0">
               <value>
@@ -46,10 +87,51 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [success] but found [username dose not exist]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [success] but found [username dose not exist]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.ninad.project.testng.TestNG.TestMyMethods.testAuthenticateMethod(TestMyMethods.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthenticateMethod -->
-        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="175" started-at="2018-07-14T19:40:53Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+        <test-method status="FAIL" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="42" started-at="2018-07-18T12:33:18Z" data-provider="ninad" finished-at="2018-07-18T12:33:18Z">
           <params>
             <param index="0">
               <value>
@@ -67,10 +149,51 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [password invalid] but found [username dose not exist]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [password invalid] but found [username dose not exist]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.ninad.project.testng.TestNG.TestMyMethods.testAuthenticateMethod(TestMyMethods.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthenticateMethod -->
-        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="23" started-at="2018-07-14T19:40:53Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="24" started-at="2018-07-18T12:33:18Z" data-provider="ninad" finished-at="2018-07-18T12:33:18Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +214,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthenticateMethod -->
-        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="1" started-at="2018-07-14T19:40:53Z" data-provider="ninad" finished-at="2018-07-14T19:40:53Z">
+        <test-method status="PASS" signature="testAuthenticateMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ninad.project.testng.TestNG.TestMyMethods@1933fd1]" name="testAuthenticateMethod" duration-ms="1" started-at="2018-07-18T12:33:18Z" data-provider="ninad" finished-at="2018-07-18T12:33:18Z">
           <params>
             <param index="0">
               <value>

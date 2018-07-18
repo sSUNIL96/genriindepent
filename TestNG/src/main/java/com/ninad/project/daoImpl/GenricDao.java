@@ -1,4 +1,4 @@
-package com.ninad.project.utility;
+package com.ninad.project.daoImpl;
 
 import java.util.List;
 
@@ -9,13 +9,14 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 
 import com.ninad.project.entities.User;
+import com.ninad.project.utility.SessionFactoryUtil;
 
 
-public   class GenricDao <T> {
+public class GenricDao {
 	
 	static SessionFactory SF = SessionFactoryUtil.getSessionFactory();
 	
-	public  void saveObject ( T object ){
+	public static <T> void saveObject ( T object ){
 		
 		Session session = SF.openSession();
 		Transaction tr = session.beginTransaction();
@@ -29,7 +30,7 @@ public   class GenricDao <T> {
 		
 	}
 
-	public   T getObject (Class T , int id){
+	public static <T> T getObject (Class T , int id){
 		
 		Session session = SF.openSession();		
 		T obj = (T) session.get(T, id);		
@@ -37,7 +38,7 @@ public   class GenricDao <T> {
 		
 	}
 	
-	public  List<T> getList (Class T) {
+	public static <T>  List<T> getList (Class T) {
 		
 		Session session = SF.openSession();	
 		Criteria cr=  session.createCriteria(T);		
@@ -47,7 +48,7 @@ public   class GenricDao <T> {
 		
 	}
 
-	public  List<T> getListbyUsername(Class T, String username) {
+	public static <T> List<T> getListbyUsername(Class T, String username) {
 
 		Session s =SF.openSession();
 		Criteria cr = s.createCriteria(T);

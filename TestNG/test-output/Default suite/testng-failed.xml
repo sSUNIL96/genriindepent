@@ -5,7 +5,7 @@
     <classes>
       <class name="com.ninad.project.testng.TestNG.TestMyMethods">
         <methods>
-          <include name="testAuthenticateMethod"/>
+          <include name="testAuthenticateMethod" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.ninad.project.testng.TestNG.TestMyMethods -->
     </classes>

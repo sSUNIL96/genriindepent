@@ -1,4 +1,4 @@
-package com.ninad.project.utility;
+package com.ninad.hibernate.curd.GenricCurd;
 
 import java.util.List;
 
@@ -8,7 +8,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 
-import com.ninad.project.entities.User;
+import com.ninad.hibernate.Util.SessionFactoryUtil;
+
 
 
 public   class GenricDao <T> {

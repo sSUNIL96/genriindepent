@@ -28,6 +28,7 @@ public class TestMyMethods {
 		String actop =Authenticate.authenticate(username, password);
 		System.out.println("*** method op = " + actop + " for uname "+username+ " password "+ password );
 		Assert.assertEquals(actop, op);
+	
 		
 		
 	}
@@ -44,30 +45,24 @@ public class TestMyMethods {
 		Sheet sheet= wb.getSheetAt(0);
 		
 		
-		Object [][] obarr = new Object [sheet.getPhysicalNumberOfRows()][3];
-		
+		Object [][] obarr = new Object [sheet.getPhysicalNumberOfRows()][3];		
 		
 		for (int i = 0 ; i<sheet.getPhysicalNumberOfRows(); i++ ){
 			
-			for (int j = 0 ; j<3 ; j++){
-				
+			for (int j = 0 ; j<3 ; j++){				
 				
 				try {
 				obarr[i][j] = sheet.getRow(i).getCell(j).getStringCellValue();
 				}
 				catch (NullPointerException e){
 					obarr[i][j]="";
-				}
-				
-				
-			}
-			
-			
-			
-			
+				}				
+			}	
 		}
 		
-		
+		return obarr;		
+	}
+			
 		
 		
 		/*
@@ -79,10 +74,7 @@ public class TestMyMethods {
 		obarr [1][1] =null;
 		obarr [1][2] = Myconstants.fieldscantbenull;*/
 		
-		return obarr;
-		
-	}
-	
+
 	
 	
 	

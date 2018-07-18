@@ -9,7 +9,13 @@ public class Myconstants {
 	public static String fieldscantbenull = "fields can not be null";
 	
 
-	
+	public enum UserFields {
+		EMPID,
+		USERNAME,
+		EMPPASSWORD,
+		CITY,
+		ISACTIVE;	
+	}
 	
 	
 }
